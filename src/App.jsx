@@ -4,6 +4,8 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Navigation from "./components/Navigation";
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );

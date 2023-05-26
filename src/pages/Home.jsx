@@ -33,7 +33,7 @@ const Home = () => {
     ];
 
     return (
-        <Container maxWidth="xl" component={"main"}>
+        <Container maxWidth="xl" component={"main"} >
             <Typography variant="h4">Templetes</Typography>
             <Typography>Select a Templete to get started</Typography>
             <ImageList
