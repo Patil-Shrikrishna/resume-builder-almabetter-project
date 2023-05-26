@@ -9,16 +9,9 @@ function App() {
   return (
     <>
       <Navigation />
-      {/* <Routes>
-        <Route index element={<Home />} /> */}
-        {/* <Route path="/resume" element={<Resume />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/preview" element={<Preview />} /> */}
-
-        {/* 404 page */}
-        {/* <Route path="*" element={<NotFound />} /> */}
-      {/* </Routes> */}
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </>
   );
 }
