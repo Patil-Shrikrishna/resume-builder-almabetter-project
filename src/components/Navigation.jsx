@@ -32,7 +32,6 @@ const navItems = [
   },
 ];
 
-
 function Navigation(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -43,11 +42,11 @@ function Navigation(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Box py={1}>
         <Link to="/">
           <img src={logo} alt="Resume-builder" width={120} />
         </Link>
-      </Typography>
+      </Box>
       <Divider />
       <List
         sx={{
@@ -89,15 +88,13 @@ function Navigation(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
+
+          <Box py={1} flexGrow={1} display={{ xs: "none", sm: "block" }}>
             <Link to="/">
-              <img src={logo} alt="Resume-builder" width={150} />
+              <img src={logo} alt="Resume-builder" width={120} />
             </Link>
-          </Typography>
+          </Box>
+
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Link
@@ -139,4 +136,4 @@ function Navigation(props) {
     </Box>
   );
 }
-export default Navigation
+export default Navigation;
